@@ -10,6 +10,8 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 
+
+
 /*
 
 1. 
@@ -27,7 +29,7 @@ This is because there is no Minion class in the package.
 
  3.
   Next, create a constructor, and getters and setters for all the member variables of the Minion class. 
-  If they’re done right, all these tests will pass.
+  If they're done right, all these tests will pass.
   
   To check, run this MinionTest class and the JUnit tab should show a GREEN bar.
     
@@ -37,12 +39,12 @@ public class MinionTest {
 
 	@Test
 	public void testConstructor() {
-		Minion stuart = new Minion("Stuart", 1, "yellow", "");
+		Minion stuart = new Minion("Stuart", 1, "yellow", " ");
 		assertEquals("Stuart", stuart.getName());
 		assertEquals(1, stuart.getEyes());
 		assertEquals("yellow", stuart.getColor());
 
-		Minion dave = new Minion("Dave", 2, "yellow", "");
+		Minion dave = new Minion("Dave", 2, "yellow", " ");
 		assertEquals("Dave", dave.getName());
 		assertEquals(2, dave.getEyes());
 		assertEquals("yellow", dave.getColor());

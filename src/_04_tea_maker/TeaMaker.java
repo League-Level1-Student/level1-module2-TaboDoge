@@ -16,12 +16,10 @@ public class TeaMaker {
 		TeaBag teabag = new TeaBag(taste);
 		teabag.getFlavor();
 		Kettle kettle = new Kettle();
-		Kettle.Water hotWater()
 		kettle.getWater();
 		kettle.boil();
 		Cup cup = new Cup();
-		
-		cup.makeTea(teabag, hotWater);
+		cup.makeTea(teabag, kettle.getWater());
 		/* Figure out how to make a cup of tea in this runner class, using the other classes below */
 	
 	
